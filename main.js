@@ -9,7 +9,7 @@ for(var i = 0, n = squares.length; i<n; i++){
 
 //append event listener to "Play Again" button
 
-document.getElementById("replay").addEventListener("touchstart", resetGame);
+document.getElementById("replay").addEventListener("touchend", resetGame);
 
 updateTurn();
 
