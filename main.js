@@ -13,6 +13,8 @@ document.getElementById("replay").addEventListener("touchstart", resetGame);
 
 updateTurn();
 
+screen.orientation.lock("portrait");
+
 var Board = {
     board: [0,0,0,0,0,0,0,0,0],
     
