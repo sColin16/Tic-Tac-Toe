@@ -8,7 +8,7 @@ body, p, button {
 }
 
 body{
-    background: #edf0f1;
+    background: #2D8A9B;
     padding:80px;
     height:calc(100% - 160px);
 }
@@ -31,6 +31,7 @@ div.X:before {
     line-height: 220px;
     font-weight: 700;
     text-align: center;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 div.O:before {
@@ -51,7 +52,7 @@ div.square {
     border-radius:15px;
     position: relative;
     background:#f22613;
-    box-shadow:0 2px 4px rgba(44, 62, 80, 0.5);
+    box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 div#info {
