@@ -16,32 +16,36 @@
     </head>
     
     <body>
+        <!--Header for the game: Score and Menu Icon-->
+        <header>
+            
+            
+            
+        </header>
         
-        <!--Holds the game board-->
+        <div id = "mainWrapper">
+            <!--Holds the game board-->
+            <div id = "game">
+                <div class = "square" id = "0"></div>
+                <div class = "square" id = "1"></div>
+                <div class = "square" id = "2"></div>
+                <div class = "square" id = "3"></div>
+                <div class = "square" id = "4"></div>
+                <div class = "square" id = "5"></div>
+                <div class = "square" id = "6"></div>
+                <div class = "square" id = "7"></div>
+                <div class = "square" id = "8"></div>
+            </div>
         
-        <div id = "game">
-            <div class = "square" id = "0"></div>
-            <div class = "square" id = "1"></div>
-            <div class = "square" id = "2"></div>
-            <div class = "square" id = "3"></div>
-            <div class = "square" id = "4"></div>
-            <div class = "square" id = "5"></div>
-            <div class = "square" id = "6"></div>
-            <div class = "square" id = "7"></div>
-            <div class = "square" id = "8"></div>
-        </div>
-        
-        <!--Holds all other information-->
-        
-        <div id = "info">
-                <p id = "Directions"></p>
+            <!--Provides information such as the turn, and the winner-->
+            <p id = "Directions"></p>
         </div>
         
         <!--Applied to the page to prevent players from playing after the game has ended-->
         <div id = "gameCover">
-            <div class = "relWrapper">
+            
                 <button id = "replay">Play Again</button>
-            </div>
+            
         </div>
         
         <!--Make the user hold the device portrait with warning message otherwise-->

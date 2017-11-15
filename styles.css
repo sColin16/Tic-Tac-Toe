@@ -56,12 +56,7 @@ div.square {
     box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
-div#info {
-    height:calc(100% - 820px);
-    position: relative;
-}
-
-#Directions {
+p#Directions {
     font-size: 50px;
     font-weight:500;
     text-align:center;
@@ -76,22 +71,30 @@ div#info {
     
 }
 
+div#mainWrapper {
+    /*Center the game in the middle of the page*/
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 div#gameCover {
     position:absolute;
-    width:820px;
-    height:1050px;
+    width:90%;
+    height:90%;
     top:80px;
     left:80px;
     
-    display:none;/*this division is only shown when the game is over*/
+    display:block;/*this division is only shown when the game is over*/
 }
 
 div#gameCover button{
     font-size:50px;
     text-align:center;
-    bottom:0;
+    top:50%;
+    transform: translateY(calc(460px + 25%));
     left:210px;
-    position:absolute;
+    position:relative;
     width:400px;
     height:100px;
     background: #0EB733;
