@@ -8,14 +8,15 @@ body, p, button {
 }
 
 body{
-    background: #4FA2B2;
+    background: #0091EA;
     padding:80px;
     height:calc(100% - 160px);
 }
 
 div#game {
     width:820px;
-    max-height:820px;
+    height:820px;
+    position: relative;
 }
 
 div.O:before,
@@ -51,18 +52,22 @@ div.square {
     border:none;
     border-radius:15px;
     position: relative;
-    background:#f22613;
+    background:#F44336;
     box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 div#info {
     height:calc(100% - 820px);
+    position: relative;
 }
 
 #Directions {
     font-size: 50px;
     font-weight:500;
     text-align:center;
+    position:relative;
+    color:white;
+    margin-top: 5%
 }
 
 .relWrapper {
@@ -74,7 +79,7 @@ div#info {
 div#gameCover {
     position:absolute;
     width:820px;
-    height:1000px;
+    height:1050px;
     top:80px;
     left:80px;
     
@@ -89,11 +94,11 @@ div#gameCover button{
     position:absolute;
     width:400px;
     height:100px;
-    background: #0EB734;
+    background: #0EB733;
     outline:none;
     border:none;
     border-radius:15px;
-    box-shadow: 5px 5px #999;
+    box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5);
     color:#edf0f1;
 }
 
