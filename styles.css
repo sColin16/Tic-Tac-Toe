@@ -76,25 +76,22 @@ div#mainWrapper {
     position:absolute;
     top:50%;
     transform: translateY(-50%);
+    text-align: center;
 }
 
 div#gameCover {
-    position:absolute;
-    width:90%;
-    height:90%;
-    top:80px;
-    left:80px;
+    position: absolute;
+    width:calc(100% - 160px);
+    height:calc(80% - 160px);
+    z-index: 2;
     
-    display:block;/*this division is only shown when the game is over*/
+    display:none;/*this division is only shown when the game is over*/
 }
 
-div#gameCover button{
+div#mainWrapper button{
     font-size:50px;
     text-align:center;
-    top:50%;
-    transform: translateY(calc(460px + 25%));
     left:210px;
-    position:relative;
     width:400px;
     height:100px;
     background: #0EB733;
@@ -103,9 +100,15 @@ div#gameCover button{
     border-radius:15px;
     box-shadow:8px 8px 4px rgba(0, 0, 0, 0.5);
     color:#edf0f1;
+    margin-top: 50px;
+    
+    z-index: 3;
+    
+    opacity: 0;/*the replay button is onyl shown when the game ends*/
+    
 }
 
-div#gameCover button:active{
+div#mainWrapper button:active{
     background:#00851E;
     box-shadow:none;
     transform: translate(5px, 5px);

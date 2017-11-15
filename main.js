@@ -102,6 +102,7 @@ function renderGameOver(winner){
     
     //reveal game cover, and button
     document.getElementById("gameCover").style.display = "block";
+    document.getElementById("replay").style.opacity = 1;
 }
 
 function resetSquares(){
@@ -119,6 +120,7 @@ function resetGame(){
     updateTurn();
     
     document.getElementById("gameCover").style.display = "none";
+    document.getElementById("replay").style.opacity = 0;
     
     currentPlayer = 1;
 }
